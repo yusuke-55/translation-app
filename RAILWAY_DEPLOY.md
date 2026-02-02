@@ -20,7 +20,7 @@
 ```
 APP_NAME=TranslationApp
 APP_ENV=production
-APP_KEY=base64:hAUAR2lbwaHAyIihEQL32tD1vIgUvVz00m3rtv72Xbw=
+APP_KEY=base64:YOUR_APP_KEY_HERE
 APP_DEBUG=false
 APP_URL=${{RAILWAY_PUBLIC_DOMAIN}}
 
@@ -31,7 +31,7 @@ DB_DATABASE=${{MYSQL.MYSQLDATABASE}}
 DB_USERNAME=${{MYSQL.MYSQLUSER}}
 DB_PASSWORD=${{MYSQL.MYSQLPASSWORD}}
 
-DEEPL_API_KEY=f3c00ebb-426c-4710-bea2-c167a666f718:fx
+DEEPL_API_KEY=your_deepl_api_key
 DEEPL_API_URL=https://api-free.deepl.com/v2/translate
 
 SESSION_DRIVER=file
@@ -39,6 +39,8 @@ SESSION_LIFETIME=120
 CACHE_DRIVER=file
 QUEUE_CONNECTION=sync
 ```
+
+※ `APP_KEY` は必ず各環境で生成してください（例: `php artisan key:generate --show`）。
 
 4. Settings → Networking → 「Generate Domain」をクリックしてURLを取得
 
