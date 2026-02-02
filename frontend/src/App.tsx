@@ -197,7 +197,7 @@ function App() {
     <div className="app">
       <div className="app-container">
         <header className="app-header">
-          <h1>リアルタイム翻訳</h1>
+          <h1>翻訳アプリ</h1>
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 10, flexWrap: 'wrap' }}>
             <select
               value={sourceLang}
@@ -328,9 +328,6 @@ function App() {
           </section>
         </main>
 
-        <footer className="app-footer">
-          <p>音声入力とリアルタイム翻訳を体験してください</p>
-        </footer>
       </div>
     </div>
   );
