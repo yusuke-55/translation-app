@@ -1,0 +1,21 @@
+# Cloudflare Tunnel config example (Docker runtime)
+#
+# 1) Create a tunnel and get its UUID
+# 2) Copy the tunnel credentials JSON into ./cloudflare/<UUID>.json
+# 3) Copy this file to ./cloudflare/config.yml and fill placeholders
+# 4) Run: docker compose --profile tunnel up -d
+
+# Tunnel UUID (recommended) or tunnel name
+# e.g. 12345678-1234-1234-1234-1234567890ab
+tunnel: <YOUR_TUNNEL_UUID>
+
+# The credentials JSON file inside the cloudflared container
+credentials-file: /etc/cloudflared/<YOUR_TUNNEL_UUID>.json
+
+ingress:
+  # Fixed public hostname (must be on a domain managed by Cloudflare)
+  - hostname: app.example.com
+    service: http://nginx:80
+
+  # Catch-all
+  - service: http_status:404
