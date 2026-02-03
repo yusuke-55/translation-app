@@ -19,6 +19,19 @@ Demo: https://translation-app-ten-iota.vercel.app
 
 ---
 
+## アプリ画面イメージ
+
+### トップ画面
+![トップ画面](https://github.com/user-attachments/assets/75ab50e8-65bc-4fd3-8a21-dc91a978fff2)
+
+### 翻訳結果（日本語 → 英語）
+![日本語から英語に翻訳](https://github.com/user-attachments/assets/2fef4556-b22b-48f8-ae5b-72c410668424)
+
+### 多言語翻訳対応
+![多言語翻訳](https://github.com/user-attachments/assets/5921333e-579a-4a0c-9f2a-33e97b878ea6)
+
+---
+
 ## 工夫した点
 
 * 音声入力 → 翻訳 → 音声再生をリアルタイムで連携し、UXを重視
